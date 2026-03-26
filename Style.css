@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header{
+    border-bottom: solid 4px #14D3D6;
+    background-color: #120014;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    nav {
+        text-align: right;
+        a{
+            color: #FF0084;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        a:hover {
+            color: #0DD578;
+            font-size: 120%;
+            transition-duration: 0.10s;
+        }
+    }
+}
+
+@media (min-width: 480x) {
+
+
+}
+body{
+    background-color: #14041B;
+}
