@@ -4,39 +4,125 @@
     scroll-behavior: smooth;
 }
 
-body{
-    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+header{
+    border-bottom: solid 2px #14D3D6;
+    background-color: #0f0111;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
-header{
-    border-bottom: solid 4px #14D3D6;
-    background-color: #120014;
-    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: right;
+.logo {
+    padding-left: 20px;
+}
+
+li {
+    display: inline-block;
+}
+
+.navgrid {
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    list-style: none;
+    padding-right: 35px;
+    margin: 0;
+    font-family: "Saira", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.text-resize {
+    color: #FF0084;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.10s ease-in;
     padding: 10px;
-    box-sizing: border-box;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    nav {
-        text-align: right;
-        a{
-            color: #FF0084;
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        a:hover {
-            color: #0DD578;
-            font-size: 120%;
-            transition-duration: 0.10s;
-        }
+    padding-right: 40px;
+}
+.text-resize:hover {
+    transform: scale(1.25);
+     color: #14D3D6;
+}
+
+#playbtn {
+  animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    color: #14D3D6;    
+  }
+}
+
+.banner{
+     width: 100%;
+}
+
+.container .btn {
+    grid-template-columns: repeat(1,1fr);
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    top: 65%;
+    left: 50px;
+    background-color: #FF0084;
+    color: #0f0111;
+    font-size: 75px;
+    padding: 12px 24px;
+    border-style: solid 2px;
+    border-color: #14D3D6;
+    transition: transform 0.10s ease-in;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container .btn:hover {
+    background-color: #14D3D6;
+    transform: scale(1.15);
+}
+
+section {
+    display: grid;
+    background-color: #0cff9a;
+    border-style: solid;
+    border-color: #0f0111;
+    font-family: "Saira", sans-serif;
+    margin: 40px 70px 40px 70px;
+    padding: 30px 0px;
+    border-radius: 10px;
+    h2 {
+        color: #0f0111;
+        text-align: center;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 40px;
+    }
+    p {
+        margin: 20px 40px 20px 40px;
+        font-size: 20px;
+        color: #14041B;
+        font-weight: bold;
     }
 }
 
-@media (min-width: 480x) {
 
-
-}
-body{
+body {
     background-color: #14041B;
+}
+
+
+@media (min-width: 480x){
+    main {
+            width: 380px;
+    }
+    .grid {
+        grid-template-columns: 50% 50%;
+    }
 }
