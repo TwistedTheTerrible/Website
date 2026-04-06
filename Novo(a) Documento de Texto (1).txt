@@ -1,0 +1,11 @@
+----------- TERTIARY COLORS -------------
+Darkest Purple = 120014
+Dark Purple = 14041B
+Mild Purple = 2A0540
+Saturated Purple = 640361
+Pinkish Purple = A8006D
+------------ SECONDARY COLORS ------------
+Shock Pink = FF0084
+Greenish blue/Teal = 0DD578
+------------ PRIMARY --------------
+Cyan = 14D3D6
