@@ -3,16 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TagJam</title>
+    <title>TagJam DEMO</title>
 
     <link rel="stylesheet" href="Style.css">
+    <link href="brands.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link href="img/icon.png" rel="icon">
+
 </head>
 
 <body>
+    <button class="colormode" onclick="myFunction()">
+        
+    </button>
+    <script>
+    function myFunction() {
+    var element = document.body;
+    element.classList.toggle("blue");
+}
+    const nomejogo = "TagJam";
+    const dev = "Twisted";
+    const genero = "Plataforma 2D";
+    const status = "DEMO";
+    const idaderec = "Recomendado para 13 anos acima";
+
+    document.getElementById("titulo-site").innerText = nomejogo;
+    document.getElementById("info-dev").innerText = dev;
+    document.getElementById("info-gen").innerText = genero;
+    document.getElementById("info-stat").innerText = status;
+    document.getElementById("class-jogo").innerText = idaderec;
+
+    let nomevisitante = prompt("Bem-vindo! Qual é seu nome?");
+    let idadevisitante = prompt("Qual é sua idade?");
+
+    if (idadevisitante >= 13) {
+        alert("Acesso Garantido, Bem-vindo "+nomevisitante);
+        document.getElementById("nomeaqui").style.filter = "none";
+    } else {
+        alert("Restriremos alguns aspectos do site, "+nomevisitante);
+        document.getElementById("nomeaqui").style.filter = "blur(20px)";
+    }
+
+</script>
 <header>
     <a href="index.html" title="TagJam" class="logo">
         <img src="img/Logo.png" alt="Logo" class="logo" width="130">
@@ -41,18 +79,56 @@
          <a href="game.html" class="btn">JOGAR!</a>
 </div>
 
-<main>
+<main class="mainindex">
     <section class="welcome">
         <h2>BEM-VINDO A COASTAL LIGHT!</h2>
-        <div class="row">
+            <div class="row">
                     <p>
                         Hora de correr e espalhar o nome da sua gangue pelas paredes, fujir das autoridades, desafiar gangues rivais e conquistar Coastal Light!
                     </p>
                     <p>
                         La Croix e sua Força Anti-Vandala vagam pela cidade, em procura dos vandalos que picham as paredes e desrespeitam sua autoridade. Ele fará de tudo para que você esteja atrás das grades.
                     </p>
+            </div>
+    </section>
+    <section class="demogame">
+        <div class="stickybg1">
+
+            <h2>ESTE JOGO É UMA DEMO!</h2>
+
+            <p>Estamos trabalhando extensivamente para trazer uma experiencia de jogo satisfatória para nossos jogadores.</p>
+            <p>Seu Feedback é bem-vindo!</p>
+
+            <div class="mediarow" id="nomeaqui">
+
+            <div class="colrow">
+                <div class="youtube">
+                    <i class="fa-brands fa-youtube"></i>
                 </div>
             </div>
+
+            <div class="colrow">
+                <div>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="colrow">
+                <div>
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+            </div>
+
+            <div class="colrow">
+                <div>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+
+        </div>
+        </div>
     </section>
 </main>
 

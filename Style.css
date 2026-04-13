@@ -4,7 +4,122 @@
     scroll-behavior: smooth;
 }
 
-/* navegador */
+/* color mode */
+
+.blue {
+  background-color: #060c1f;
+  color: #130624;
+  transition: 1s;
+  header{
+    border-bottom: solid 2px #d614d6;
+    background-color: #010a16;
+    }
+
+    .text-resize {
+    color: #14D3D6;
+    }
+
+  .text-resize:hover {
+    transform: scale(1.25);
+     color: #d614d6;
+    }
+
+    #playbtn:hover {
+        background-color: #010a16;
+        color: #d614d6;
+        transition: 0.10s;
+    }
+
+#playbtn {
+    background-color: #14D3D6;
+    border: #14D3D6 solid 2px;
+    color: #010a16;
+    border-radius: 10px;
+     padding: 10px 20px;
+}
+.container .btn {
+    background-color: #14D3D6;
+    color: #010a16;
+}
+.welcome {
+    display: grid;
+    background-color: #c4126e;
+    color: #010a16;
+    h2 {
+        color: #000000;
+    }
+    p {
+        color: #000000;
+    }
+}
+
+.mainindex{
+    background-image: url(img/background\ alt.png);
+    .stickybg1 {
+        background-image: url(img/background\ sticky\ 1\ alt.png);
+    
+    h2 {
+            color: #FF0084;
+        }
+        p {
+            color: #FF0084;
+        }
+        .mediarow {
+            .fa-brands {
+            color: #14D3D6;
+        }
+        }
+    }
+    }
+    .colormode{
+        background-image: url(img/color\ button\ alt.png);
+    }
+
+    .inspsect {
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+    color: #FF0084;
+    text-align: center;
+    font-size: 50px;
+}
+
+.inspsect2 {
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+    color: #FF0084;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 0px;
+}
+
+.about {
+    background-color: #FF0084;
+    color: #0f0111;
+}
+
+footer {
+    display: flex;
+    background-color: #010a16;
+    border-top: #FF0084 solid 2px;
+    color: #FF0084;
+}
+}
+
+.colormode{
+    background-image: url(img/color\ button.png);
+    position:fixed;
+    top: 110px;
+    left: 330px;
+    padding: 30px;
+    margin: 20px;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    z-index: 1001;
+}
+
+
+/* nav */
 
 header{
     border-bottom: solid 2px #14D3D6;
@@ -58,7 +173,7 @@ li {
     border: #FF0084 solid 2px;
     color: #0f0111;
     border-radius: 10px;
-     padding: 10px 20px;
+    padding: 10px 20px;
 }
 
 #playbtn:hover {
@@ -73,7 +188,6 @@ li {
 }
 
 /* banner */
-
 .banner{
     width: 100%;
     margin-top: 160px;
@@ -108,14 +222,12 @@ li {
 .welcome {
     display: grid;
     background-color: #0cff9a;
-    border-style: solid;
-    border-color: #0f0111;
     font-family: "Saira", sans-serif;
-    margin: 10px 20px;
-    padding: 10px 5px;
+    margin: 10px 60px;
+    padding: 20px 20px;
     border-radius: 10px;
     h2 {
-        color: #0f0111;
+        color: #000000;
         text-align: center;
         margin: 20px;
         font-weight: bold;
@@ -124,10 +236,57 @@ li {
     p {
         margin: 10px 20px;
         font-size: 10px;
-        color: #14041B;
+        color: #000000;
         font-weight: bold;
     }
 }
+
+/* background */
+
+.mainindex {
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    top: 0;
+    z-index: -3;
+    padding-top: 30px;
+    .stickybg1 {
+        background-image: url(img/background\ sticky\ 1.png);
+        background-size: cover;
+        width: 100%;
+        z-index: 0;
+        position: sticky;
+        bottom: 0px;
+        padding-top: 100px;
+        h2 {
+            font-family: "Saira", sans-serif;
+            color: #14D3D6;
+            text-align: center;
+        }
+        p {
+            font-family: "Saira", sans-serif;
+            color: #14D3D6;
+            text-align: center;
+            padding: 10px;
+        }
+        .mediarow {
+            display: grid;
+            padding-bottom: 10px;
+            grid-template-columns: 25% 25% 25% 25%;
+            align-items: center;
+            text-align: center;
+            i{
+                font-size: 50px;
+                cursor: pointer;
+            }
+            .fa-brands {
+                color: #FF0084;
+            }
+        }
+    }
+}
+
 
 /* sessão dos sobre */
 
@@ -406,16 +565,36 @@ body {
 /* Gallery Section */
 
 .artwork {
-    margin-top: 80px;
+    margin-top: 160px;
     font-family: "Saira", sans-serif;
     font-size: 40px;
     color: #14D3D6;
     padding: 10px;
     .artgrid {
-        grid-template-columns: repeat(4,1fr);
+        display: inline-block;
+        grid-template-columns: 100%;
         gap: 20px;
+        text-align: center;
         list-style: none;
         margin: 0;
+        h3 {
+            font-size: 30px;
+        }
+        .twisted {
+            margin: 20px;
+            video {
+                width: 80%;
+            }
+            img {
+                width: 80%;
+            }
+        }
+        .artorias {
+            margin: 20px;
+            img {
+                width: 70%;
+            }
+        }
     }
 }
 
@@ -429,6 +608,9 @@ body {
     text-align: center;
     img {
         width: 80%;
+    }
+    a {
+        color: #14D3D6;
     }
     p {
         font-size: 20px;
@@ -485,32 +667,59 @@ footer {
     z-index: 1000;
     }
 
+    .colormode{
+    background-image: url(img/color\ button.png);
+    position:fixed;
+    top: -20px;
+    padding: 40px;
+    left: 45%;
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+    z-index: 1001;
+}
+
     .banner{
     width: 100%;
     margin-top: 0px;
 }
 
 .welcome {
-    display: grid;
-    background-color: #0cff9a;
-    border-style: solid;
-    border-color: #0f0111;
-    font-family: "Saira", sans-serif;
-    margin: 40px 70px 40px 70px;
-    padding: 30px 0px;
-    border-radius: 10px;
     h2 {
-        color: #0f0111;
-        text-align: center;
-        margin: 20px;
-        font-weight: bold;
-        font-size: 40px;
+        font-size: 30px;
     }
     p {
-        margin: 20px 40px 20px 40px;
         font-size: 20px;
-        color: #14041B;
-        font-weight: bold;
+    }
+}
+
+.mainindex {
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -3;
+    padding-top: 100px;
+    .stickybg1 {
+        background-image: url(img/background\ sticky\ 1.png);
+        background-size: cover;
+        width: 100%;
+        z-index: 0;
+        bottom: 40px;
+        padding-bottom: 100px;
+        h2 {
+            font-family: "Saira", sans-serif;
+            color: #14D3D6;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 100px;
+        }
+        p {
+            font-family: "Saira", sans-serif;
+            color: #14D3D6;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+        }
     }
 }
 
@@ -571,7 +780,11 @@ footer {
             padding-top: 7px;
             .text-content {
                 font-size: 20px;
+                h1 {
+                    font-size: 40px;
+                }
             }
+            
         }
     }
     
@@ -589,4 +802,29 @@ footer {
     }
     
     }
+
+    .artwork {
+    font-size: 40px;
+    color: #14D3D6;
+    .artgrid {
+        text-align: center;
+        h3 {
+            font-size: 30px;
+        }
+        .twisted {
+            margin: 10px;
+            video {
+                width: 25%;
+            }
+            img {
+                width: 25%;
+            }
+        }
+        .artorias {
+            img {
+                width: 25%;
+            }
+        }
+    }
+}
 }
