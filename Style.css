@@ -53,6 +53,14 @@
     }
 }
 
+.gameinfo {
+    background: #0f0111;
+    border: 2px solid #0cff9a;
+    color: #FF0084;
+    box-shadow: 0 0 15px #14D3D6;
+    font-family: 'Saira', sans-serif;
+}
+
 .mainindex{
     background-image: url(img/background\ alt.png);
     .stickybg1 {
@@ -116,8 +124,14 @@ footer {
     background-size: cover;
     border: none;
     z-index: 1001;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
+.colormode:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
 
 /* nav */
 
@@ -241,6 +255,17 @@ li {
     }
 }
 
+.gameinfo {
+    background: #010a16;
+    border: 2px solid #c4126e;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 250px;
+    color: #14D3D6;
+    box-shadow: 0 0 15px #FF0084;
+    font-family: 'Saira', sans-serif;
+}
 /* background */
 
 .mainindex {
@@ -276,6 +301,7 @@ li {
             grid-template-columns: 25% 25% 25% 25%;
             align-items: center;
             text-align: center;
+            padding-bottom: 150px;
             i{
                 font-size: 50px;
                 cursor: pointer;
@@ -721,6 +747,19 @@ footer {
             padding: 10px;
         }
     }
+}
+
+.gameinfo {
+    background: #010a16;
+    border: 2px solid #c4126e;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 40px auto;
+    max-width: 600px;
+    font-size: 20px;
+    color: #14D3D6;
+    box-shadow: 0 0 15px #FF0084;
+    font-family: 'Saira', sans-serif;
 }
 
 .container .btn {
